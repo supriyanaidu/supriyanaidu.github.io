@@ -21,5 +21,5 @@ $("#idContentContactList").hide();
 function populateDialer(dialerNumber) {
 	var currentNumber = document.getElementByID("dialerPrompt").value;
 	currentNumber = currentNumber + dialerNumber;
-	document.getElementByID("dialerPrompt").value=currentNumber;
+	document.getElementByID("dialerPrompt").value=dialerNumber;
 }
