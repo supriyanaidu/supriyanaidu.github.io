@@ -1,0 +1,58 @@
+<html lang="en">
+	<head>
+		<title>Assignment 1 - Supriya Naidu</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="headerTabs" id="idHeader">
+			<!-- <input type="button" value="Dialer" class="headers" id="dialerTab"></input>
+			<input type="button" value="Contact List" class="headers" id="contactListTab"></input>
+			<input type="button" value="Add Contact" class="headers" id="newContactTab"></input> -->
+			<button class="headers" id="dialerTab">Dialer</button>
+			<button class="headers" id="contactListTab">Contact List</button>
+			<button class="headers" id="newContactTab">Add Contact</button>
+		</div>
+		<div class="content" id="idContent">
+			<div class="contentDialer" id="idContentDialer">
+				<h2>Dialer</h2>
+				<form>
+					<input class="dialerInput" id="dialerPrompt" type="text"><br>
+					<button class="dialer" id="dialer1" value="1" onclick="populateDialer(this.value)">1</button>
+					<button class="dialer" id="dialer2" value="2" onclick="populateDialer(this.value)">2</button>
+					<button class="dialer" id="dialer3" value="3" onclick="populateDialer(this.value)">3</button><br>
+					<button class="dialer" id="dialer4" value="4" onclick="populateDialer(this.value)">4</button>
+					<button class="dialer" id="dialer5" value="5" onclick="populateDialer(this.value)">5</button>
+					<button class="dialer" id="dialer6" value="6" onclick="populateDialer(this.value)">6</button><br>
+					<button class="dialer" id="dialer7" value="7" onclick="populateDialer(this.value)">7</button>
+					<button class="dialer" id="dialer8" value="8" onclick="populateDialer(this.value)">8</button>
+					<button class="dialer" id="dialer9" value="9" onclick="populateDialer(this.value)">9</button><br>
+					<button class="dialer" id="dialer*" value="*" onclick="populateDialer(this.value)">*</button>
+					<button class="dialer" id="dialer0" value="0" onclick="populateDialer(this.value)">0</button>
+					<button class="dialer" id="dialer#" value="#" onclick="populateDialer(this.value)">#</button><br>
+					<button class="dialerS" id="dialerDial">Dial</button>
+					<button class="dialerS" id="dialerClear">Clear</button>
+				</form>
+			</div>
+			<div class="contentContactList" id="idContentContactList">
+				<h2>Contact List</h2>
+				<button class="contactNames" id="contact1">Supriya</button><br><br>
+				<button class="contactNames" id="contact2">Keke</button><br>
+			</div>
+			<div class="contentNewContact" id="idContentNewContact">
+				<h2>Add Contact</h2>
+				<form>
+					Name:<br>
+					<input class="textInput" id="nameText" placeholder="Jane Smith"/><br><br>
+					Phone Number:<br>
+					<input class="textInput" id="PhoneText" placeholder="555-555-5555"/><br><br>
+					Email:<br>
+					<input class="textInput" id="emailText" placeholder="jane.smith@colorado.edu"/><br><br>
+					<button class="textButton1" id="addContactButton">Add Contact</button>
+					<button class="textButton1" id="clearContactButton">Clear</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+</html>
