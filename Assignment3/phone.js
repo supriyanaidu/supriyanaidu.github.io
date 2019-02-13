@@ -37,7 +37,7 @@ $("#newContactTab").click(function() { // when "button_id" is clicked
 // }
 
 /* fancy dialing functions from Shaun's solution*/
-$("#contentDialer button").click(function() {
+$("#dialer_pad button").click(function() {
 	$("#dialerPrompt").val($("#dialerPrompt").val() + this.innerText);
 })
 
