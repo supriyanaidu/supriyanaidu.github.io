@@ -2,7 +2,7 @@
 	overflow: hidden;
   border: 1px solid #ccc;
   background-color: #e7e7e7;
-	width:21.9%;
+	/* width:50.9%; */
 }
 
 .headerTabs button{
@@ -77,6 +77,12 @@ input {
   margin: 8px 0;
   border: 1px solid #ccc;
 	border-radius: 8px;
+}
+
+table, td {
+  border: 1px solid;
+  text-align: center;
+  /* padding: 5px; */
 }
 /* .contentNewContact{
 	text-align:center;
