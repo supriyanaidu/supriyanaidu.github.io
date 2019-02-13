@@ -78,11 +78,14 @@ input {
   border: 1px solid #ccc;
 	border-radius: 8px;
 }
+table {
+  border-collapse: collapse;
+}
 
-table, td {
+th, td {
   border: 1px solid;
   text-align: center;
-  /* padding: 5px; */
+  padding: 5px;
 }
 /* .contentNewContact{
 	text-align:center;
