@@ -8,9 +8,10 @@
 			<!-- <input type="button" value="Dialer" class="headers" id="dialerTab"></input>
 			<input type="button" value="Contact List" class="headers" id="contactListTab"></input>
 			<input type="button" value="Add Contact" class="headers" id="newContactTab"></input> -->
-			<button class="headers" id="dialerTab">Dialer</button>
-			<button class="headers" id="contactListTab">Contact List</button>
-			<button class="headers" id="newContactTab">Add Contact</button>
+			<button class="headers" id="dialerTab" accesskey="d">Dialer</button>
+			<button class="headers" id="contactListTab" accesskey="l">Contact List</button>
+			<button class="headers" id="newContactTab" accesskey="a">Add Contact</button>
+			<button class="headers" id="helpTab" accesskey="h">Help</button>
 		</div>
 		<div class="content" id="idContent">
 			<div class="contentDialer" id="idContentDialer">
@@ -19,21 +20,21 @@
 					<label for="dialerPrompt">Phone Dialer</label><br>
 					<input class="dialerInput" id="dialerPrompt"/><br>
 					<div id="dialer_pad">
-						<button type="button" class="dialer" id="dialer1">1</button>
-						<button type="button" class="dialer" id="dialer2">2</button>
-						<button type="button" class="dialer" id="dialer3">3</button><br>
-						<button type="button" class="dialer" id="dialer4">4</button>
-						<button type="button" class="dialer" id="dialer5">5</button>
-						<button type="button" class="dialer" id="dialer6">6</button><br>
-						<button type="button" class="dialer" id="dialer7">7</button>
-						<button type="button" class="dialer" id="dialer8">8</button>
-						<button type="button" class="dialer" id="dialer9">9</button><br>
-						<button type="button" class="dialer" id="dialer*">*</button>
-						<button type="button" class="dialer" id="dialer0">0</button>
-						<button type="button" class="dialer" id="dialer#">#</button><br>
+						<button type="button" class="dialer" id="dialer1" accesskey="1">1</button>
+						<button type="button" class="dialer" id="dialer2" accesskey="2">2</button>
+						<button type="button" class="dialer" id="dialer3" accesskey="3">3</button><br>
+						<button type="button" class="dialer" id="dialer4" accesskey="4">4</button>
+						<button type="button" class="dialer" id="dialer5" accesskey="5">5</button>
+						<button type="button" class="dialer" id="dialer6" accesskey="6">6</button><br>
+						<button type="button" class="dialer" id="dialer7" accesskey="7">7</button>
+						<button type="button" class="dialer" id="dialer8" accesskey="8">8</button>
+						<button type="button" class="dialer" id="dialer9" accesskey="9">9</button><br>
+						<button type="button" class="dialer" id="dialer*" accesskey="*">*</button>
+						<button type="button" class="dialer" id="dialer0" accesskey="0">0</button>
+						<button type="button" class="dialer" id="dialer#" accesskey="#">#</button><br>
 					</div>
-					<button type="button" class="dialerS" id="dialerDial">Dial</button>
-					<button type="button" class="dialerS" id="dialerClear">Clear</button>
+					<button type="button" class="dialerS" id="dialerDial" accesskey="r">Dial</button>
+					<button type="button" class="dialerS" id="dialerClear" accesskey="c">Clear</button>
 				</form>
 			</div>
 			<div class="contentContactList" id="idContentContactList">
@@ -53,6 +54,9 @@
 					<button class="textButton1" id="addContactButton">Add Contact</button>
 					<button class="textButton1" id="clearContactButton">Clear</button>
 				</form>
+			</div>
+			<div class="contentHelp" id="idContentHelp">
+
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
