@@ -16,23 +16,24 @@
 			<div class="contentDialer" id="idContentDialer">
 				<form>
 					<h1>Dialer</h1>
+					<label for="Dialer Input">Phone Dialer</label><br>
 					<input class="dialerInput" id="dialerPrompt"/><br>
 					<div id="dialer_pad">
-						<button class="dialer" id="dialer1" value="1">1</button>
-						<button class="dialer" id="dialer2" value="2">2</button>
-						<button class="dialer" id="dialer3" value="3">3</button><br>
-						<button class="dialer" id="dialer4" value="4">4</button>
-						<button class="dialer" id="dialer5" value="5">5</button>
-						<button class="dialer" id="dialer6" value="6">6</button><br>
-						<button class="dialer" id="dialer7" value="7">7</button>
-						<button class="dialer" id="dialer8" value="8">8</button>
-						<button class="dialer" id="dialer9" value="9">9</button><br>
-						<button class="dialer" id="dialer*" value="*">*</button>
-						<button class="dialer" id="dialer0" value="0">0</button>
-						<button class="dialer" id="dialer#" value="#">#</button><br>
+						<button type="button" class="dialer" id="dialer1">1</button>
+						<button type="button" class="dialer" id="dialer2">2</button>
+						<button type="button" class="dialer" id="dialer3">3</button><br>
+						<button type="button" class="dialer" id="dialer4">4</button>
+						<button type="button" class="dialer" id="dialer5">5</button>
+						<button type="button" class="dialer" id="dialer6">6</button><br>
+						<button type="button" class="dialer" id="dialer7">7</button>
+						<button type="button" class="dialer" id="dialer8">8</button>
+						<button type="button" class="dialer" id="dialer9">9</button><br>
+						<button type="button" class="dialer" id="dialer*">*</button>
+						<button type="button" class="dialer" id="dialer0">0</button>
+						<button type="button" class="dialer" id="dialer#">#</button><br>
 					</div>
-					<button class="dialerS" id="dialerDial">Dial</button>
-					<button class="dialerS" id="dialerClear">Clear</button>
+					<button type="button" class="dialerS" id="dialerDial">Dial</button>
+					<button type="button" class="dialerS" id="dialerClear">Clear</button>
 				</form>
 			</div>
 			<div class="contentContactList" id="idContentContactList">
@@ -43,11 +44,11 @@
 			<div class="contentNewContact" id="idContentNewContact">
 				<h1>Add Contact</h1>
 				<form>
-					Name:<br>
+					<label for="name">Name: </label><br>
 					<input class="textInput" id="nameText" placeholder="Jane Smith"/><br><br>
-					Phone Number:<br>
+					<label for="phone_number">Phone number: </label><br>
 					<input class="textInput" id="PhoneText" placeholder="555-555-5555"/><br><br>
-					Email:<br>
+					<label for="email">Email address: </label><br>
 					<input class="textInput" id="emailText" placeholder="jane.smith@colorado.edu"/><br><br>
 					<button class="textButton1" id="addContactButton">Add Contact</button>
 					<button class="textButton1" id="clearContactButton">Clear</button>

@@ -7,28 +7,16 @@ $("#dialerTab").click(function() { // when "button_id" is clicked
 	$("#idContentDialer").show(); // show the element with ID "element"
 	$("#idContentNewContact").hide(); // hide the element with ID "otherElement"
 	$("#idContentContactList").hide();
-
-	$("#dialerTab").addClass("current-tab");
-	$("#contactListTab").removeClass("current-tab");
-	$("#newContactTab").removeClass("current-tab");
 });
 $("#contactListTab").click(function() { // when "button_id" is clicked
 	$("#idContentDialer").hide(); // show the element with ID "element"
 	$("#idContentNewContact").hide(); // hide the element with ID "otherElement"
 	$("#idContentContactList").show();
-
-	$("#dialerTab").removeClass("current-tab");
-	$("#contactListTab").addClass("current-tab");
-	$("#newContactTab").removeClass("current-tab");
 });
 $("#newContactTab").click(function() { // when "button_id" is clicked
 	$("#idContentDialer").hide(); // show the element with ID "element"
 	$("#idContentNewContact").show(); // hide the element with ID "otherElement"
 	$("#idContentContactList").hide();
-
-	$("#dialerTab").removeClass("current-tab");
-	$("#contactListTab").removeClass("current-tab");
-	$("#newContactTab").addClass("current-tab");
 });
 // function populateDialer(dialerNumber) {
 // 	var currentNumber = document.getElementByID("dialerPrompt").value;
