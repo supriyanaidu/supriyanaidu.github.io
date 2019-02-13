@@ -18,8 +18,17 @@ $("#idContentDialer").hide(); // show the element with ID "element"
 $("#idContentNewContact").show(); // hide the element with ID "otherElement"
 $("#idContentContactList").hide();
 });
-function populateDialer(dialerNumber) {
-	var currentNumber = document.getElementByID("dialerPrompt").value;
-	currentNumber = currentNumber + dialerNumber;
-	document.getElementByID("dialerPrompt").value=dialerNumber;
-}
+// function populateDialer(dialerNumber) {
+// 	var currentNumber = document.getElementByID("dialerPrompt").value;
+// 	currentNumber = currentNumber + dialerNumber;
+// 	document.getElementByID("dialerPrompt").value=dialerNumber;
+// }
+
+/* fancy dialing functions from Shaun's solution*/
+$("#contentDialer button").click(function() {
+	$("#dialerPrompt").val($("#dialerPrompt").val() + this.innerText);
+})
+
+$("#dialerClear").click(function() {
+	$("#dialerPrompt").val("");
+})
