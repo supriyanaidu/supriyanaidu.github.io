@@ -188,13 +188,13 @@ $(".calcButton").click(function(event) {
 function evaluateExpression(first,op,second) {
 	output = 0;
 	if (op == "+") {
-		output = parseInt(first) + parseInt(second);
+		output = parseFloat(first) + parseFloat(second);
 	} else if (op == "-") {
-		output = parseInt(first) - parseInt(second);
+		output = parseFloat(first) - parseFloat(second);
 	} else if (op == "*") {
-		output = parseInt(first) * parseInt(second);
+		output = parseFloat(first) * parseFloat(second);
 	} else if (op == "/") {
-		output = parseInt(first) / parseInt(second);
+		output = parseFloat(first) / parseFloat(second);
 	}
 
 	// now, handle it
