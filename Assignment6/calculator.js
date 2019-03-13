@@ -88,17 +88,43 @@ function clickSelectedItem() {
 		$(whichButton).click();
 	}
 }
-
-// this function responds to user key presses
-// you'll rewrite this to control your interface using some number of keys
-$(document).keypress(function(event) {
-	if (event.key == "a") {
-		alert("You pressed the 'a' key!")
-	} else if (event.key == "b") {
-		alert("You pressed the 'b' key!")
+//reference: https://css-tricks.com/snippets/javascript/javascript-keycodes/
+// // this function responds to user key presses
+// 5 key interface
+// Condition 1: arrow keys and enter
+$(document).keydown (function(event) {
+	switch (event.keyCode) {
+		case 37:
+			selectPrevious();  //left arrow key
+			break;
+		case 38:
+			selectUp();  //up arrow key
+			break;
+		case 39:
+			selectNext();  //right arrow key
+			break;
+		case 40:
+			selectDown();  //down arrow key
+			break;
+		case 13:
+			clickSelectedItem();  //enter key
 	}
 })
 
+// 3 key interface
+// Condition 2: "a" and "d" keys and space bar
+$(document).keydown (function(event) {
+	switch (event.keyCode) {
+		case 68:
+			selectNext();  //"d" key
+			break;
+		case 65:
+			selectPrevious();  //"a" key
+			break;
+		case 32:
+			clickSelectedItem();  //space bar
+	}
+})
 
 /* calculator stuff below here */
 // for operations, we'll save + - / *

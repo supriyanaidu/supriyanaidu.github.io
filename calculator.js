@@ -89,18 +89,15 @@ function clickSelectedItem() {
 	}
 }
 
-// this function responds to user key presses
-// you'll rewrite this to control your interface using some number of keys
-$(document).keypress(function(event) {
-	if (event.key == "a") {
-		// alert("You pressed the 'a' key!")
-		selectItem(buttonOrder[0]);
-	} else if (event.key == "b") {
-		alert("You pressed the 'b' key!")
-	}
-})
+// // this function responds to user key presses
+// // you'll rewrite this to control your interface using some number of keys
+// $(document).keypress(function(event) {
+// 	if (event.key == "a") {
+// 		selectItem(buttonOrder[0]);
+// 	}
+// })
 
-document.onkeydown = function(event) {
+document.onkeydown (function(event) {
 	switch (event.keyCode) {
 		case 7:
 			selectItem('#button7');
@@ -121,8 +118,10 @@ document.onkeydown = function(event) {
 			// alert('Down key pressed');
 			selectDown();
 			break;
+		case 13:
+			clickSelectedItem();
 	}
-};
+})
 
 /* calculator stuff below here */
 // for operations, we'll save + - / *
