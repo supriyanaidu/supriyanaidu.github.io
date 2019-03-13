@@ -112,7 +112,7 @@ $(document).keydown (function(event) {
 })
 
 // 3 key interface
-// Condition 2: "a" and "d" keys and space bar
+// Condition 2: "a" and "d" keys and enter key
 $(document).keydown (function(event) {
 	switch (event.keyCode) {
 		case 68:
@@ -121,8 +121,8 @@ $(document).keydown (function(event) {
 		case 65:
 			selectPrevious();  //"a" key
 			break;
-		case 32:
-			clickSelectedItem();  //space bar
+		// case 13:
+		// 	clickSelectedItem();  //enter key
 	}
 })
 
