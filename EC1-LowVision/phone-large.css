@@ -119,6 +119,11 @@ th, td {
 	color: white;
 	background-color: black;
 }
+
+.hpImages {
+	width: 200px;
+	height: 200px;
+}
 /* .contentNewContact{
 	text-align:center;
 } */

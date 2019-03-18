@@ -89,6 +89,11 @@ th, td {
   text-align: center;
   padding: 5px;
 }
+
+.hpImages {
+	width: 100px;
+	height: 100px;
+}
 /* .contentNewContact{
 	text-align:center;
 } */
