@@ -4,181 +4,194 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div role="navigation" class="headerTabs" id="idHeader" aria-live="polite">
-			<!-- <input type="button" value="Dialer" class="headers" id="dialerTab"></input>
-			<input type="button" value="Contact List" class="headers" id="contactListTab"></input>
-			<input type="button" value="Add Contact" class="headers" id="newContactTab"></input> -->
-			<button class="headers" id="dialerTab" accesskey="d">Dialer</button>
-			<button class="headers" id="contactListTab" accesskey="l">Contact List</button>
-			<button class="headers" id="newContactTab" accesskey="a">Add Contact</button>
-			<button class="headers" id="helpTab" accesskey="h">Help</button>
-		</div>
-		<div role="main" class="content" id="idContent">
-			<div class="contentDialer" id="idContentDialer">
-				<form>
-					<h1>Dialer</h1>
-					<label for="dialerPrompt">Phone Dialer</label><br>
-					<input class="dialerInput" id="dialerPrompt"/><br>
-					<div id="dialer_pad">
-						<button type="button" class="dialer" id="dialer1" accesskey="1">1</button>
-						<button type="button" class="dialer" id="dialer2" accesskey="2">2</button>
-						<button type="button" class="dialer" id="dialer3" accesskey="3">3</button><br>
-						<button type="button" class="dialer" id="dialer4" accesskey="4">4</button>
-						<button type="button" class="dialer" id="dialer5" accesskey="5">5</button>
-						<button type="button" class="dialer" id="dialer6" accesskey="6">6</button><br>
-						<button type="button" class="dialer" id="dialer7" accesskey="7">7</button>
-						<button type="button" class="dialer" id="dialer8" accesskey="8">8</button>
-						<button type="button" class="dialer" id="dialer9" accesskey="9">9</button><br>
-						<button type="button" class="dialer" id="dialer*" accesskey="*">*</button>
-						<button type="button" class="dialer" id="dialer0" accesskey="0">0</button>
-						<button type="button" class="dialer" id="dialer#" accesskey="#">#</button><br>
-					</div>
-					<button type="button" class="dialerS" id="dialerDial" accesskey="r">Dial</button>
-					<button type="button" class="dialerS" id="dialerClear" accesskey="c">Clear</button>
-				</form>
+		<div class="textInfo">
+			<div role="navigation" class="headerTabs" id="idHeader" aria-live="polite">
+				<!-- <input type="button" value="Dialer" class="headers" id="dialerTab"></input>
+				<input type="button" value="Contact List" class="headers" id="contactListTab"></input>
+				<input type="button" value="Add Contact" class="headers" id="newContactTab"></input> -->
+				<button class="headers" id="dialerTab" accesskey="d">Dialer</button>
+				<button class="headers" id="contactListTab" accesskey="l">Contact List</button>
+				<button class="headers" id="newContactTab" accesskey="a">Add Contact</button>
+				<button class="headers" id="helpTab" accesskey="h">Help</button>
+				<button class="headers" id="normalStyle" accesskey="n">Normal</button>
+				<button class="headers" id="largeStyle" accesskey="v">Large</button>
 			</div>
-			<div class="contentContactList" id="idContentContactList">
-				<h1>Contact List</h1>
-				<table>
-					<tr>
-						<th>Contact Image</th>
-						<th>Name</th>
-						<th>Phone Number</th>
-						<th>Email</th>
-					</tr>
-					<tr>
-						<td><img src="images/harry.jpeg" alt="Contact picture of Harry Potter" height=100 width=100 longdesc="https://www.pottermore.com/explore-the-story/harry-potter"></img></td>
-						<td>Harry Potter</td>
-						<td>222-222-2222</td>
-						<td>harry.potter@hogwarts.com</td>
-					</tr>
-					<tr>
-						<td><img src="images/hermoine.jpg" alt="Contact picture of Hermoine Granger" height=100 width=100 longdesc="https://www.pottermore.com/explore-the-story/hermione-granger"></img></td>
-						<td>Hermoine Granger</td>
-						<td>222-333-3333</td>
-						<td>hermoine.granger@hogwarts.com</td>
-					</tr>
-					<tr>
-						<td><img src="images/ron.jpg" alt="Contact picture of Ron Weasley" height=100 width=100 longdesc="https://www.pottermore.com/explore-the-story/ron-weasley"></img></td>
-						<td>Ron Weasley</td>
-						<td>222-111-1111</td>
-						<td>ron.weasley@hogwarts.com</td>
-					</tr>
-					</table>
-				<!-- <button class="contactNames" id="contact1">Supriya</button><br><br>
-				<button class="contactNames" id="contact2">Keke</button><br> -->
-			</div>
-			<div class="contentNewContact" id="idContentNewContact">
-				<h1>Add Contact</h1>
-				<form>
-					<label for="nameText">Name: </label><br>
-					<input class="textInput" id="nameText" placeholder="Jane Smith"/><br><br>
-					<label for="PhoneText">Phone number: </label><br>
-					<input class="textInput" id="PhoneText" placeholder="555-555-5555"/><br><br>
-					<label for="emailText">Email address: </label><br>
-					<input class="textInput" id="emailText" placeholder="jane.smith@colorado.edu"/><br><br>
-					<button class="textButton1" id="addContactButton">Add Contact</button>
-					<button class="textButton1" id="clearContactButton">Clear</button>
-				</form>
-			</div>
-			<div class="contentHelp" id="idContentHelp">
-				<h1>More info about key features of this application</h1>
-				<h2>Accessibility features</h2>
-				<ul>
-					<li>Every button is accessible via the tab key</li>
-					<li>Header tabs and dialer keys have keyboard shortcuts</li>
-					<li>Formatted contact table for ease of use via a screen reader</li>
-					<li>All images are captioned</li>
-					<li>ARIA roles are present</li>
-					<li>Dynamic tab change has ARIA-live</li>
-				</ul>
-				<h2>Keyboard shortcuts for Chrome on Windows</h2>
-				<table>
-					<tr>
-						<th>Shortcut Keys</th>
-						<th>Action</th>
-					</tr>
-					<tr>
-						<td>Shift + Alt + d</td>
-						<td>Dialer Tab</td>
-					</tr>
-					<tr>
-						<td>Alt + l</td>
-						<td>Contact List Tab</td>
-					</tr>
-					<tr>
-						<td>Alt + a</td>
-						<td>Add Contact Tab</td>
-					</tr>
-					<tr>
-						<td>Alt + h</td>
-						<td>Help Tab</td>
-					</tr>
-					<tr>
-						<td>Alt + 0</td>
-						<td>0 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 1</td>
-						<td>1 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 2</td>
-						<td>2 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 3</td>
-						<td>3 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 4</td>
-						<td>4 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 5</td>
-						<td>5 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 6</td>
-						<td>6 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 7</td>
-						<td>7 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 8</td>
-						<td>8 Button</td>
-					</tr>
-					<tr>
-						<td>Alt + 9</td>
-						<td>9 Button</td>
-					</tr>
-					<tr>
-						<td>Shift + Alt + *</td>
-						<td>* Button</td>
-					</tr>
-					<tr>
-						<td>Shift + Alt + #</td>
-						<td># Button</td>
-					</tr>
-					<tr>
-						<td>Alt + r</td>
-						<td>Dial Button</td>
-					</tr>
-					<tr>
-						<td>Alt + c</td>
-						<td>Clear Button</td>
-					</tr>
-					</table>
-				<br>
-				<h2>References:</h2>
-				<ul>
-					<li><a href="https://www.w3schools.com/css" target="_blank">CSS Examples</a> </li>
-					<li><a href="https://tinycards.duolingo.com/decks/6c5tNJ44/harry-potter-words" target="_blank">Harry Potter Image</a></li>
-					<li><a href="http://www.fanpop.com/clubs/hermione-granger/images/3357514/title/chamber-secrets-photo" target="_blank">Hermoine Granger Image</a></li>
-					<li><a href="http://erbparodies.wikia.com/wiki/Ron_Weasley" target="_blank">Ron Weasley Image</a></li>
-				</ul>
+			<div role="main" class="content" id="idContent">
+				<div class="contentDialer" id="idContentDialer">
+					<form>
+						<h1>Dialer</h1>
+						<label for="dialerPrompt">Phone Dialer</label><br>
+						<input class="dialerInput" id="dialerPrompt"/><br>
+						<div id="dialer_pad">
+							<button type="button" class="dialer" id="dialer1" accesskey="1">1</button>
+							<button type="button" class="dialer" id="dialer2" accesskey="2">2</button>
+							<button type="button" class="dialer" id="dialer3" accesskey="3">3</button><br>
+							<button type="button" class="dialer" id="dialer4" accesskey="4">4</button>
+							<button type="button" class="dialer" id="dialer5" accesskey="5">5</button>
+							<button type="button" class="dialer" id="dialer6" accesskey="6">6</button><br>
+							<button type="button" class="dialer" id="dialer7" accesskey="7">7</button>
+							<button type="button" class="dialer" id="dialer8" accesskey="8">8</button>
+							<button type="button" class="dialer" id="dialer9" accesskey="9">9</button><br>
+							<button type="button" class="dialer" id="dialer*" accesskey="*">*</button>
+							<button type="button" class="dialer" id="dialer0" accesskey="0">0</button>
+							<button type="button" class="dialer" id="dialer#" accesskey="#">#</button><br>
+						</div>
+						<button type="button" class="dialerS" id="dialerDial" accesskey="r">Dial</button>
+						<button type="button" class="dialerS" id="dialerClear" accesskey="c">Clear</button>
+					</form>
+				</div>
+				<div class="contentContactList" id="idContentContactList">
+					<h1>Contact List</h1>
+					<table>
+						<tr>
+							<th>Contact Image</th>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Email</th>
+						</tr>
+						<tr>
+							<td><img src="images/harry.jpeg" alt="Contact picture of Harry Potter" height=100 width=100 longdesc="https://www.pottermore.com/explore-the-story/harry-potter"></img></td>
+							<td>Harry Potter</td>
+							<td>222-222-2222</td>
+							<td>harry.potter@hogwarts.com</td>
+						</tr>
+						<tr>
+							<td><img src="images/hermoine.jpg" alt="Contact picture of Hermoine Granger" height=100 width=100 longdesc="https://www.pottermore.com/explore-the-story/hermione-granger"></img></td>
+							<td>Hermoine Granger</td>
+							<td>222-333-3333</td>
+							<td>hermoine.granger@hogwarts.com</td>
+						</tr>
+						<tr>
+							<td><img src="images/ron.jpg" alt="Contact picture of Ron Weasley" height=100 width=100 longdesc="https://www.pottermore.com/explore-the-story/ron-weasley"></img></td>
+							<td>Ron Weasley</td>
+							<td>222-111-1111</td>
+							<td>ron.weasley@hogwarts.com</td>
+						</tr>
+						</table>
+					<!-- <button class="contactNames" id="contact1">Supriya</button><br><br>
+					<button class="contactNames" id="contact2">Keke</button><br> -->
+				</div>
+				<div class="contentNewContact" id="idContentNewContact">
+					<h1>Add Contact</h1>
+					<form>
+						<label for="nameText">Name: </label><br>
+						<input class="textInput" id="nameText" placeholder="Jane Smith"/><br><br>
+						<label for="PhoneText">Phone number: </label><br>
+						<input class="textInput" id="PhoneText" placeholder="555-555-5555"/><br><br>
+						<label for="emailText">Email address: </label><br>
+						<input class="textInput" id="emailText" placeholder="jane.smith@colorado.edu"/><br><br>
+						<button class="textButton1" id="addContactButton">Add Contact</button>
+						<button class="textButton1" id="clearContactButton">Clear</button>
+					</form>
+				</div>
+				<div class="contentHelp" id="idContentHelp">
+					<h1>More info about key features of this application</h1>
+					<h2>Accessibility features</h2>
+					<ul>
+						<li>Every button is accessible via the tab key</li>
+						<li>Header tabs and dialer keys have keyboard shortcuts</li>
+						<li>Formatted contact table for ease of use via a screen reader</li>
+						<li>All images are captioned</li>
+						<li>ARIA roles are present</li>
+						<li>Dynamic tab change has ARIA-live</li>
+						<li>Normal and Low Vision Mode</li>
+					</ul>
+					<h2>Keyboard shortcuts for Chrome on Windows</h2>
+					<table>
+						<tr>
+							<th>Shortcut Keys</th>
+							<th>Action</th>
+						</tr>
+						<tr>
+							<td>Shift + Alt + d</td>
+							<td>Dialer Tab</td>
+						</tr>
+						<tr>
+							<td>Alt + l</td>
+							<td>Contact List Tab</td>
+						</tr>
+						<tr>
+							<td>Alt + a</td>
+							<td>Add Contact Tab</td>
+						</tr>
+						<tr>
+							<td>Alt + h</td>
+							<td>Help Tab</td>
+						</tr>
+						<tr>
+							<td>Alt + n</td>
+							<td>Normal Mode Button</td>
+						</tr>
+						<tr>
+							<td>Alt + v</td>
+							<td>Large Mode Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 0</td>
+							<td>0 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 1</td>
+							<td>1 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 2</td>
+							<td>2 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 3</td>
+							<td>3 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 4</td>
+							<td>4 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 5</td>
+							<td>5 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 6</td>
+							<td>6 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 7</td>
+							<td>7 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 8</td>
+							<td>8 Button</td>
+						</tr>
+						<tr>
+							<td>Alt + 9</td>
+							<td>9 Button</td>
+						</tr>
+						<tr>
+							<td>Shift + Alt + *</td>
+							<td>* Button</td>
+						</tr>
+						<tr>
+							<td>Shift + Alt + #</td>
+							<td># Button</td>
+						</tr>
+						<tr>
+							<td>Alt + r</td>
+							<td>Dial Button</td>
+						</tr>
+						<tr>
+							<td>Alt + c</td>
+							<td>Clear Button</td>
+						</tr>
+						</table>
+					<br>
+					<h2>References:</h2>
+					<ul>
+						<li><a href="https://www.w3schools.com/css" target="_blank">CSS Examples</a> </li>
+						<li><a href="https://tinycards.duolingo.com/decks/6c5tNJ44/harry-potter-words" target="_blank">Harry Potter Image</a></li>
+						<li><a href="http://www.fanpop.com/clubs/hermione-granger/images/3357514/title/chamber-secrets-photo" target="_blank">Hermoine Granger Image</a></li>
+						<li><a href="http://erbparodies.wikia.com/wiki/Ron_Weasley" target="_blank">Ron Weasley Image</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

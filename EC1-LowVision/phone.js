@@ -28,6 +28,14 @@ $("#helpTab").click(function() { // when "button_id" is clicked
 	$("#idContentContactList").hide();
 	$("#idContentHelp").show();
 });
+
+//switching style sheets ref: https://stackoverflow.com/questions/7846980/how-do-i-switch-my-css-stylesheet-using-jquery
+$('#largeStyle').click(function (){
+   $('link[href="style.css"]').attr('href','phone-large.css');
+});
+$('#normalStyle').click(function (){
+   $('link[href="phone-large.css"]').attr('href','style.css');
+});
 // function populateDialer(dialerNumber) {
 // 	var currentNumber = document.getElementByID("dialerPrompt").value;
 // 	currentNumber = currentNumber + dialerNumber;
