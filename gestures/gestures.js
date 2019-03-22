@@ -48,5 +48,10 @@ $( "#gestureArea" ).mouseup(function(event) {
     numberOfClicks = 0;
     $('#gestureResult').text('Triple Click!');
   }
-
 });
+//
+// References:
+// https://api.jquery.com/click/
+// https://api.jquery.com/mousedown/
+// http://api.jquery.com/event.pagex/
+// http://api.jquery.com/text/
